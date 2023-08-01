@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Using Array</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #b287ee;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #14c0c0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+        h3{
+            background-color: rgb(47, 221, 91);
+        }
+    </style>
+</head>
+<body>
+    <h1>Develop Lists using Array and Populate through Loop</h1>
+    <h3>This table is made by JavaScript</h3>
+    <table border="1">
+        <tr>
+            <th>Product Name</th>
+            <th>Product id</th>
+            <th>Product Quality</th>
+            <th>Product Quantity</th>
+        </tr>
+        <script type="text/javascript">
+            var headers = ['Product ID', 'Product Name', 'Product Quality', 'Product Quantity'];
+
+            var products = [
+                {
+                    productName: 1,
+                    productId: 'been',
+                    productQuality: 'Good',
+                    productQuantity: ' 2kgs'
+                },
+                {
+                    productName: 2,
+                    productId: 'Wheat',
+                    productQuality: 'Good',
+                    productQuantity: '5kgs'
+                },
+                {
+                    productName: 3,
+                    productId: 'Rice',
+                    productQuality: 'Good',
+                    productQuantity: '7 kgs'
+                },
+                {
+                    productName: 4,
+                    productId: 'Salt',
+                    productQuality: 'Good',
+                    productQuantity: '2 peaks'
+                },
+                {
+                    productName: 5,
+                    productId: 'Oil',
+                    productQuality: 'Good',
+                    productQuantity: '15 kgs'
+                },
+                {
+                    productName: 6,
+                    productId: 'Milk',
+                    productQuality: 'Good',
+                    productQuantity: '30 Bottles'
+                }
+            ];
+
+            for (let i = 0; i < products.length; i++) {
+                document.write("<tr><td>" + products[i].productId + "</td><td>" + products[i].productName + "</td><td>" +
+                    products[i].productQuality + "</td><td>" + products[i].productQuantity + "</td></tr>");
+            }
+        </script>
+    </table>
+
+    <h3>LisT Of presnet Courses</h3>
+    <ul>
+        <script type="text/javascript">
+            var course = ["Amazone", "Web Technology", "Cyber Security", "Programming Languages"];
+            for (let i = 0; i < course.length; i++) {
+                document.write("<li>" + course[i] + "</li>");
+            }
+        </script>
+    </ul>
+
+    <h3>Data Base Topics </h3>
+    <ol>
+        <script type="text/javascript">
+            var topic = ["Array", "Linked List", "Stacks", "Queues", "Trees", "Graphs"];
+            for (let i = 0; i < topic.length; i++) {
+                document.write("<li>" + topic[i] + "</li>");
+            }
+        </script>
+    </ol>
+</body>
+</html>
